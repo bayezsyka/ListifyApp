@@ -1,0 +1,19 @@
+-- Database creation (if not exists)
+CREATE DATABASE IF NOT EXISTS listify;
+USE listify;
+
+-- Drop existing table if exists
+DROP TABLE IF EXISTS Task;
+
+-- Create Task table
+CREATE TABLE Task (
+    id VARCHAR(50) PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    description TEXT,
+    category ENUM('work', 'personal', 'shopping', 'health'),
+    priority ENUM('low', 'medium', 'high'),
+    dueDate DATE,
+    color VARCHAR(20) DEFAULT 'gray',
+    completed BOOLEAN DEFAULT FALSE,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
