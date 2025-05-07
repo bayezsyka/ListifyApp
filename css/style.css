@@ -1,0 +1,43 @@
+/* Additional custom styles */
+.progress-circle-bg {
+    fill: none;
+    stroke: #e5e7eb;
+    stroke-width: 10;
+}
+
+.progress-circle {
+    fill: none;
+    stroke: #4f46e5;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+/* Task item hover effect */
+.task-item {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom form styling */
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    border-color: #4f46e5;
+}
+
+/* Task checkbox styling */
+.task-checkbox {
+    accent-color: #4f46e5;
+}
+
+/* Filter button active state */
+.filter-btn.active {
+    background-color: #4f46e5;
+    color: white;
+}
