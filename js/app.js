@@ -164,9 +164,19 @@ document.addEventListener("DOMContentLoaded", function () {
       completed: state.editingTask.completed,
     };
 
-    // Validate title
+    // Validate task
     if (!taskData.title) {
-      alert("Please enter a task title");
+      alert("Nama tugas tidak boleh kosong.");
+      return;
+    }
+
+    if (!taskData.category || taskData.category === " ") {
+      alert("Silakan pilih kategori tugas.");
+      return;
+    }
+
+    if (!taskData.priority || taskData.priority === " ") {
+      alert("Silakan pilih prioritas tugas.");
       return;
     }
 
