@@ -42,6 +42,10 @@
             background: linear-gradient(to right, #4f46e5, #7c3aed);
             transition: background 0.3s ease, transform 0.2s ease;
         }
+        .overdue {
+            background-color:rgb(223, 26, 42);
+            color: white;
+        }
         .btn-primary:hover {
             background: linear-gradient(to right, #4338ca, #6d28d9);
             transform: scale(1.05);
